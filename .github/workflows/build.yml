@@ -1,0 +1,28 @@
+name: Build CV
+on: [push, workflow_dispatch]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v5
+        with:
+          typst-version: "0.15.1"
+      - name: Build designed CV
+        run: typst compile main.typ cv.pdf --font-path assets/fonts
+      - name: Build ATS variant
+        run: typst compile main-ats.typ cv-ats.pdf --font-path assets/fonts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv
+          path: |
+            cv.pdf
+            cv-ats.pdf
+      - uses: softprops/action-gh-release@v1
+        if: github.ref_type == 'tag'
+        with:
+          files: |
+            cv.pdf
+            cv-ats.pdf
