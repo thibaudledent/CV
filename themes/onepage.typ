@@ -21,8 +21,8 @@
 #let photo-size = 2.35cm
 
 // ---- Small building blocks -----------------------------------------
-#let section(title) = {
-  block(above: sec-space-above, below: sec-space-below)[
+#let section(title, above: sec-space-above) = {
+  block(above: above, below: sec-space-below)[
     #text(font: head-font, size: 9.5pt, weight: "bold", fill: accent, tracking: 0.8pt)[#upper(title)]
     #v(-5pt)
     #line(length: 100%, stroke: 0.6pt + rule-color)
@@ -39,7 +39,7 @@
 }
 
 #let stack-line(s) = if s != none {
-  block(above: 3pt)[#text(size: 7.7pt, fill: muted, style: "italic")[Stack: #s]]
+  block(above: 7.5pt)[#text(size: 7.7pt, fill: muted, style: "italic")[Stack: #s]]
 }
 
 #let bullets(items) = {
@@ -68,9 +68,9 @@
     column-gutter: 14pt,
     [
       #text(font: head-font, size: 18.5pt, weight: "bold", tracking: -0.2pt)[#cv.name]
-      #v(-6pt)
+      #v(+2pt)
       #text(size: 10pt, fill: accent, weight: "medium")[#cv.title]
-      #v(-5.5pt)
+      #v(+2pt)
       #text(size: 8pt, fill: muted)[
         #cv.location · #link("mailto:" + cv.email)[#cv.email] \
         #cv.links.map(l => link(l.url)[#l.label]).join(" · ")
@@ -97,15 +97,15 @@
       e.dates,
     )
     if e.summary != none {
-      block(above: 3.5pt)[#text(size: 8.3pt, style: "italic", fill: muted.darken(15%))[#e.summary]]
+      block(above: 6.5pt)[#text(size: 8.3pt, style: "italic", fill: muted.darken(15%))[#e.summary]]
     }
-    block(above: 4pt)[#bullets(e.bullets)]
+    block(above: 6.5pt)[#bullets(e.bullets)]
     stack-line(e.stack)
   }
 
   // ---------- Experience: employment umbrella ----------
   let emp = cv.employment
-  v(entry-space)
+  v(7pt)
   entry-head(
     [
       #text(weight: "bold", size: 9.6pt)[#emp.employer] \
@@ -117,13 +117,13 @@
   block(above: 3pt)[#text(size: 8.4pt)[#emp.intro]]
 
   for m in emp.missions {
-    block(above: 6.5pt)[
+    block(above: 9.5pt)[
       #entry-head(text(size: 9.1pt, weight: "semibold")[#m.name], m.dates)
     ]
     if m.summary != none {
-      block(above: 2.5pt)[#text(size: 8.3pt, style: "italic", fill: muted.darken(15%))[#m.summary]]
+      block(above: 6.5pt)[#text(size: 8.3pt, style: "italic", fill: muted.darken(15%))[#m.summary]]
     }
-    block(above: 3.5pt)[#bullets(m.bullets)]
+    block(above: 6.5pt)[#bullets(m.bullets)]
     stack-line(m.stack)
   }
 
@@ -140,6 +140,7 @@
   )
 
   // ---------- Bottom bands ----------
+  v(6.5pt)
   grid(
     columns: (1fr, 1fr),
     column-gutter: 20pt,
@@ -162,7 +163,7 @@
 
   // ---------- Optional open-source band ----------
   if show-open-source {
-    section("Open Source")
+    section("Open Source", above: 7.5pt)
     text(size: 8.4pt)[#cv.open_source]
   }
 }

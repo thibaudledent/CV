@@ -1,5 +1,5 @@
 // =====================================================================
-// CV CONTENT — validated content model v2 (Phase 2.5)
+// CV CONTENT
 // Pure data: no styling here. Layout lives in themes/.
 // Edit this file for content changes; commits stay clean.
 // =====================================================================
@@ -18,7 +18,7 @@
 
   experience: (
     (
-      client: "European Commission (DG TAXUD), via Accenture",
+      client: "European Commission, via Accenture",
       project: "CBAM — Carbon Border Adjustment Mechanism",
       role: "Freelance Tech Lead / Senior Software Engineer",
       location: "Brussels",
@@ -48,7 +48,7 @@
         bullets: (
           [Led one of the project's three Scrum teams (up to 10 developers), delivering \~one third of the 50+ bank integrations.],
           [Designed the asynchronous transaction flows and resilience mechanisms for zero-transaction-loss operation at scale.],
-          [Led the Worldline *Bancontact nexo* integration (Belgium's dominant card scheme).],
+          [Led the Worldline *Bancontact NEXO* integration (Belgium's dominant card scheme).],
           [Operated the platform in production through the Ingenico → Worldline transformation; on-call rotation member.],
         ),
         stack: "Java · Cassandra · Kafka · S3 · Consul · OpenAPI · ELK · Puppet/Hiera",
