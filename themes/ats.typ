@@ -6,7 +6,7 @@
 #let body-size = 9.1pt
 
 #let section(title) = {
-  block(above: 9pt, below: 12pt)[
+  block(above: 14pt, below: 8pt)[
     #text(size: 10.5pt, weight: "bold")[#upper(title)]
     #v(-2pt)
     #line(length: 100%, stroke: 0.5pt + black)
