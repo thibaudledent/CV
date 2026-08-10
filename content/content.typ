@@ -39,7 +39,7 @@
     role: "Consultant, final role Software Engineering Manager",
     location: "Brussels & Luxembourg",
     dates: "2015 – Oct 2024",
-    intro: [Long-term missions at *Worldline (formerly Ingenico)* — payments:],
+    intro: [Consultant since 2015 — started with IT systems for the *Government of Luxembourg* (Java, Oracle, WebSphere), then long-term missions at *Worldline (formerly Ingenico)* — payments:],
     missions: (
       (
         name: "Acquirer Hub — Lead Developer",
@@ -61,15 +61,6 @@
           [Led the re-architecture of the monolithic token store into shards; executed the migration of *2+ billion tokens* hands-on against the live production system.],
         ),
         stack: "Java · Spring Boot 3 · Spring Batch · PostgreSQL · Envoy",
-      ),
-      (
-        name: "Government of Luxembourg — Developer",
-        dates: "2015 – 2016",
-        summary: none,
-        bullets: (
-          [IT systems for the Luxembourgish government (Java, Oracle, WebSphere).],
-        ),
-        stack: none,
       ),
     ),
   ),
@@ -95,5 +86,5 @@
   languages: "French (native) · English (professional) · Dutch (basic)",
 
   // Sparse-page insurance — rendered only if `show-open-source` is enabled in the theme
-  open_source: [Maintained a fork of *j8583* (ISO 8583 Java library) while building payment platforms — #link("https://github.com/thibaudledent/j8583")[github.com/thibaudledent/j8583].],
+  open_source: [Still maintain a fork of *j8583* (ISO 8583 Java library), originally built while working on payment platforms; no longer adding features, but kept up to date — #link("https://github.com/thibaudledent/j8583")[github.com/thibaudledent/j8583].],
 )
