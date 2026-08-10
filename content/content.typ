@@ -42,7 +42,7 @@
     intro: [Started in Luxembourg, then long-term missions at *Worldline (formerly Ingenico)* — payments:],
     missions: (
       (
-        name: "Acquirer Hub — Lead Developer (Worldline, Brussels))",
+        name: "Acquirer Hub — Lead Developer (Worldline, Brussels)",
         dates: "2016 – 2024",
         summary: [Unified acquiring API consolidating Ingenico's post-acquisition systems into a single platform connecting *50+ acquiring banks worldwide*; scaled from *0 to 7M+ transactions/day* (sync + async flows), 99.9%+ measured availability.],
         bullets: (
@@ -67,9 +67,9 @@
         dates: "2015 – 2016",
         summary: none,
         bullets: (
-          [IT systems for the Luxembourgish government.],
+          [IT systems for the Luxembourgish government (Java, Oracle, WebSphere).],
         ),
-        stack: "Java · Oracle · WebSphere",
+        stack: none,
       ),
     ),
   ),
