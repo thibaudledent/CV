@@ -29,7 +29,7 @@
         [Own the synchronization of company data between European Commission information systems and the CBAM platform — secure integration across distributed EC systems.],
         [Design and deliver shared capabilities used across the platform: document management, notifications, Camunda-based task management.],
       ),
-      stack: "Java · Spring Boot · Kubernetes · Kafka · Oracle · Redis · Camunda · Angular/TypeScript · AWS",
+      stack: "Java · Spring Boot 4 · Kubernetes · Kafka · Oracle · Redis · Camunda · Angular/TypeScript · AWS",
     ),
   ),
 
@@ -39,10 +39,10 @@
     role: "Consultant, final role Software Engineering Manager",
     location: "Brussels & Luxembourg",
     dates: "2015 – Oct 2024",
-    intro: [Long-term missions at *Worldline (formerly Ingenico)* — payments:],
+    intro: [Started in Luxembourg, then long-term missions at *Worldline (formerly Ingenico)* — payments:],
     missions: (
       (
-        name: "Acquirer Hub — Lead Developer",
+        name: "Acquirer Hub — Lead Developer (Worldline, Brussels)",
         dates: "2016 – 2024",
         summary: [Unified acquiring API consolidating Ingenico's post-acquisition systems into a single platform connecting *50+ acquiring banks worldwide*; scaled from *0 to 7M+ transactions/day* (sync + async flows), 99.9%+ measured availability.],
         bullets: (
@@ -54,7 +54,7 @@
         stack: "Java · Cassandra · Kafka · S3 · Consul · OpenAPI · ELK · Puppet/Hiera",
       ),
       (
-        name: "Tokenization Service — Lead Developer",
+        name: "Tokenization Service — Lead Developer (Worldline, Brussels)",
         dates: "2022 – 2024 (in parallel)",
         summary: [PCI-DSS tokenization platform shielding the wider organisation from card-data compliance; millions of requests/day.],
         bullets: (
@@ -63,7 +63,7 @@
         stack: "Java · Spring Boot 3 · Spring Batch · PostgreSQL · Envoy",
       ),
       (
-        name: "Government of Luxembourg — Developer",
+        name: "Government of Luxembourg — Developer (Luxembourg)",
         dates: "2015 – 2016",
         summary: none,
         bullets: (
@@ -95,5 +95,5 @@
   languages: "French (native) · English (professional) · Dutch (basic)",
 
   // Sparse-page insurance — rendered only if `show-open-source` is enabled in the theme
-  open_source: [Maintained a fork of *j8583* (ISO 8583 Java library) while building payment platforms — #link("https://github.com/thibaudledent/j8583")[github.com/thibaudledent/j8583].],
+  open_source: [Maintain a fork of *j8583* (ISO 8583 Java library), originally built while working on payment platforms — #link("https://github.com/thibaudledent/j8583")[github.com/thibaudledent/j8583].],
 )
