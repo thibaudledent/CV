@@ -29,7 +29,7 @@
         [Own the synchronization of company data between European Commission information systems and the CBAM platform — secure integration across distributed EC systems.],
         [Design and deliver shared capabilities used across the platform: document management, notifications, Camunda-based task management.],
       ),
-      stack: "Java · Spring Boot · Kubernetes · Kafka · Oracle · Redis · Camunda · Angular/TypeScript · AWS",
+      stack: "Java · Spring Boot 4 · Kubernetes · Kafka · Oracle · Redis · Camunda · Angular/TypeScript · AWS",
     ),
   ),
 
@@ -86,5 +86,5 @@
   languages: "French (native) · English (professional) · Dutch (basic)",
 
   // Sparse-page insurance — rendered only if `show-open-source` is enabled in the theme
-  open_source: [Still maintain a fork of *j8583* (ISO 8583 Java library), originally built while working on payment platforms; no longer adding features, but kept up to date — #link("https://github.com/thibaudledent/j8583")[github.com/thibaudledent/j8583].],
+  open_source: [Maintain a fork of *j8583* (ISO 8583 Java library), originally built while working on payment platforms; kept up to date — #link("https://github.com/thibaudledent/j8583")[github.com/thibaudledent/j8583].],
 )
