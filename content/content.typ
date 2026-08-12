@@ -25,7 +25,7 @@
       dates: "Oct 2024 – present",
       summary: [EU carbon-pricing-at-the-border platform; definitive regime live since Jan 2026, serving importers across all 27 member states.],
       bullets: (
-        [Technical lead within a 15-person Scrum team on a 60+ person programme; hands-on full-stack development of cross-cutting platform services.],
+        [Technical lead within a ~12-person Scrum team on a 60+ person programme; hands-on full-stack development of cross-cutting platform services.],
         [Own the synchronization of company data between European Commission information systems and the CBAM platform — secure integration across distributed EC systems.],
         [Design and deliver shared capabilities used across the platform: document management, notifications, Camunda-based task management.],
       ),
