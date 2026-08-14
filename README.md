@@ -27,8 +27,9 @@ release, and publish `cv.pdf` + `cv-preview.png` to the
 out, so every distributed version is reproducible.
 
 ### One-time setup: website deploy key
-Publishing to the website repo needs an SSH deploy key (not a PAT — deploy
-keys don't expire; fine-grained PATs cap at one year). Generate it once:
+Publishing to the website repo needs an SSH deploy key.
+
+Generate it once:
 
 ```sh
 ssh-keygen -t ed25519 -N "" -f /tmp/cv-deploy-key -C "CV repo -> website"
